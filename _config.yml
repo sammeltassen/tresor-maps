@@ -20,7 +20,7 @@
 
 title:            'Trésor Maps'
 description:      'Overview of digitised maps held by the special collections of TU Delft Library'
-url:              'http://sammeltassen.nl'
+url:              'https://sammeltassen.nl'
 baseurl:          '/tresor-maps'
 
 # ---------------------------------------------------------------
