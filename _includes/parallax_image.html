@@ -2,12 +2,12 @@
   {% assign image = include.image %}
 {% else %}
   {% assign item  = site[include.collection] | where: 'pid', include.pid | first %}
-  {% assign image = item.full %}
+  {% assign image = item.thumbnail | replace: "full/400,339", "full/full" %}
 {% endif %}
 
 {%- capture style -%}
   background-image: url('{{ image | absolute_url }}');
-  background-position: 0% {{ include.y | default: '15%' }};
+  background-position: 50% {{ include.y | default: '50%' }};
 
   {% if include.height %}
   height: {{ include.height }} !important;

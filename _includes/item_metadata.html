@@ -14,7 +14,11 @@
       {% if item.type == 'link' %}
         {% if key == 'manifest' %}
           {%- capture value -%}
-            <a href="{{ value | absolute_url }}" target="_blank" rel="noreferrer">{{ value | absolute_url }}</a>
+            <a href="{{ value | absolute_url }}" target="_blank" rel="noreferrer">Direct link</a><br>
+            <a href="https://allmaps.org/editor/#/?url={{ value | absolute_url }}" target="_blank" rel="noreferrer">Open in Allmaps Editor</a><br>
+            <a href="https://viewer.allmaps.org/#data={{ value | absolute_url }}" target="_blank" rel="noreferrer">Open in Allmaps Viewer</a><br>
+            <a href="http://uv-v4.netlify.app/uv.html#?manifest={{ value | absolute_url }}" target="_blank" rel="noreferrer">Open in Universal Viewer</a><br>
+            <a href="https://projectmirador.org/embed/?manifest={{ value | absolute_url }}" target="_blank" rel="noreferrer">Open in Mirador</a><br>
           {%- endcapture -%}
         {% else %}
           {%- capture value -%}

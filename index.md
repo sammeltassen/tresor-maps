@@ -2,9 +2,9 @@
 layout: page
 show_title: false
 banner:
-  collection: qatar
-  pid: obj10
-  y: 25%
+  collection: kaartenproject
+  pid: 04ebb752-9d4f-4c9f-9ee3-f12507dd2f05
+  y: 50%
   height: '500px'
 ---
 
@@ -14,4 +14,4 @@ The collection items in this demo are from The Museum of Islamic Art, Qatar, (co
 
 ### Browse the Collection
 
-{% include collection_gallery.html facet_by='object_type' collection='qatar' %}
+{% include collection_gallery.html collection='kaartenproject' %}
