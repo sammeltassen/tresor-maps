@@ -11,7 +11,7 @@ function excerptedString(str) {
 
 function getThumbnail(item, url) {
   if ('thumbnail' in item) {
-    return `<img class='sq-thumb-sm' src='${url}${item.thumbnail}'/>&nbsp;&nbsp;&nbsp;`
+    return `<img class='sq-thumb-sm' src='${item.thumbnail}'/>&nbsp;&nbsp;&nbsp;`
   }
   else {
     return '';
@@ -20,7 +20,7 @@ function getThumbnail(item, url) {
 
 function displayResult(item, fields, url) {
   var pid   = item.pid;
-  var label = item.label || 'Untitled';
+  var label = item.pid || 'Untitled';
   var link  = item.permalink;
   var thumb = getThumbnail(item, url);
   var meta  = []
