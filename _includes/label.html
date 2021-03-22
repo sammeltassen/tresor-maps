@@ -1,0 +1,1 @@
+{% assign items = site.data.kaartenproject-new | where: "id", include.uuid %}{% for item in items %}{{ item.label | replace: "-", " " }}{% endfor %}
